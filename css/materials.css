@@ -1,0 +1,437 @@
+/* ========== ПОИСК В ШАПКЕ ========== */
+.search-form-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f1f5f9;
+    padding: 8px 18px;
+    border-radius: 40px;
+}
+
+.search-form-top i {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.search-form-top input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 0.9rem;
+    width: 180px;
+    font-family: 'Inter', sans-serif;
+    color: #1e293b;
+}
+
+.search-form-top input::placeholder {
+    color: #94a3b8;
+}
+
+.search-clear {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.search-clear:hover {
+    color: #ef4444;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+/* ========== ХЕДЕР ========== */
+.page-header {
+    padding: 50px 0;
+    background: #0a0f2a;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(239,68,68,0.06) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.page-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.page-header-text h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.page-header-text p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+}
+
+.page-header-text strong {
+    color: #ef4444;
+}
+
+.page-header-icon {
+    font-size: 4rem;
+    color: #ef4444;
+    opacity: 0.8;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
+
+/* ========== КАРТОЧКИ КАТЕГОРИЙ ========== */
+.categories-section {
+    padding: 50px 0 20px;
+    background: #ffffff;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.category-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: #ffffff;
+    border: 2px solid #f1f5f9;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    border-color: #ef4444;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(239, 68, 68, 0.1);
+}
+
+.category-card-icon {
+    width: 48px;
+    height: 48px;
+    background: #fef2f2;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef4444;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.category-card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.category-card-name {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.95rem;
+}
+
+.category-card-count {
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+.category-card-arrow {
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+
+.category-card:hover .category-card-arrow {
+    color: #ef4444;
+    transform: translateX(4px);
+}
+
+/* ========== МАТЕРИАЛЫ ПО ГРУППАМ ========== */
+.materials-section {
+    padding: 30px 0 80px;
+    background: #f8faff;
+}
+
+.materials-group {
+    margin-bottom: 40px;
+}
+
+.materials-group:last-child {
+    margin-bottom: 0;
+}
+
+.group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+.group-header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.group-icon {
+    width: 44px;
+    height: 44px;
+    background: #0a0f2a;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef4444;
+    font-size: 1.1rem;
+}
+
+.group-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.group-count {
+    background: #f1f5f9;
+    color: #64748b;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.group-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ef4444;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: gap 0.3s;
+}
+
+.group-link:hover {
+    gap: 12px;
+}
+
+/* ========== СПИСОК МАТЕРИАЛОВ ========== */
+.materials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.material-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.material-item:hover {
+    border-color: #ef4444;
+    background: #fef2f2;
+    transform: translateX(6px);
+}
+
+.material-item-icon {
+    width: 40px;
+    height: 40px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 0.95rem;
+    flex-shrink: 0;
+    transition: all 0.3s;
+}
+
+.material-item:hover .material-item-icon {
+    background: #ef4444;
+    color: #ffffff;
+}
+
+.material-item-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.material-item-title {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.material-item-desc {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.material-item-badge {
+    background: #ef4444;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.material-item-arrow {
+    color: #cbd5e1;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    transition: all 0.3s;
+}
+
+.material-item:hover .material-item-arrow {
+    color: #ef4444;
+    transform: translateX(4px);
+}
+
+/* ========== НЕТ РЕЗУЛЬТАТОВ ========== */
+.no-results {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.no-results-icon {
+    font-size: 4rem;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.no-results h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.no-results p {
+    color: #64748b;
+    margin-bottom: 24px;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ef4444;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-primary:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
+}
+
+/* ========== АДАПТИВ ========== */
+@media (max-width: 768px) {
+    .page-header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .page-header-text h1 {
+        font-size: 1.7rem;
+    }
+    .page-header-icon {
+        font-size: 3rem;
+    }
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    .group-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .material-item-desc {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 35px 0;
+    }
+    .page-header-text h1 {
+        font-size: 1.4rem;
+    }
+    .search-form-top input {
+        width: 120px;
+    }
+    .material-item {
+        padding: 14px 16px;
+    }
+    .material-item-title {
+        font-size: 0.88rem;
+    }
+    .group-title {
+        font-size: 1.1rem;
+    }
+}

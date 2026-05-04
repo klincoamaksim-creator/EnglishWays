@@ -1,0 +1,462 @@
+/* ========== КНОПКА ТЕМЫ ========== */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ef4444;
+    transform: rotate(15deg);
+}
+
+/* ========== ТЁМНАЯ ТЕМА ========== */
+body.dark-theme {
+    background: #0f172a;
+    color: #cbd5e1;
+}
+
+/* Вторая навигация */
+body.dark-theme .second-nav {
+    background: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+body.dark-theme .nav-secondary a {
+    color: #94a3b8;
+}
+
+body.dark-theme .nav-secondary a:hover {
+    color: #ef4444;
+}
+
+/* Герой */
+body.dark-theme .hero {
+    background: #0a0f2a;
+}
+
+body.dark-theme .hero-text .slogan {
+    color: #f1f5f9;
+}
+
+body.dark-theme .hero-text p {
+    color: #94a3b8;
+}
+
+body.dark-theme .btn-outline {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Секции */
+body.dark-theme .latest-materials {
+    background: #0f172a;
+}
+
+body.dark-theme .section-title {
+    color: #f1f5f9;
+}
+
+body.dark-theme .section-subtitle {
+    color: #64748b;
+}
+
+body.dark-theme .section-icon {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+body.dark-theme .section-header {
+    /* без изменений */
+}
+
+/* Строки материалов */
+body.dark-theme .material-row {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: none;
+}
+
+body.dark-theme .material-row:hover {
+    border-color: #ef4444;
+    background: #1e293b;
+    box-shadow: 0 8px 20px rgba(239, 68, 68, 0.1);
+}
+
+body.dark-theme .material-row-title {
+    color: #f1f5f9;
+}
+
+body.dark-theme .material-row-meta {
+    color: #94a3b8;
+}
+
+body.dark-theme .material-row-date {
+    color: #64748b;
+}
+
+body.dark-theme .material-row-arrow {
+    color: #475569;
+}
+
+body.dark-theme .material-row-icon {
+    background: #334155;
+    color: #94a3b8;
+}
+
+body.dark-theme .material-row:hover .material-row-icon {
+    background: #ef4444;
+    color: #ffffff;
+}
+
+body.dark-theme .empty-text {
+    color: #64748b;
+}
+
+/* Жизнь в техникуме */
+body.dark-theme .life-section {
+    background: #1e293b;
+}
+
+body.dark-theme .life-feed-item {
+    background: #0f172a;
+    border-color: #334155;
+    box-shadow: none;
+}
+
+body.dark-theme .life-feed-item:hover {
+    border-color: #ef4444;
+    box-shadow: 0 16px 40px rgba(239, 68, 68, 0.08);
+}
+
+body.dark-theme .life-feed-text {
+    background: #0f172a;
+}
+
+body.dark-theme .life-feed-text h3 {
+    color: #f1f5f9;
+}
+
+body.dark-theme .life-feed-text p {
+    color: #94a3b8;
+}
+
+body.dark-theme .life-feed-number {
+    color: #334155;
+}
+
+body.dark-theme .life-feed-image {
+    border-color: #334155;
+}
+
+/* Подвал */
+body.dark-theme .footer {
+    background: #0a0f2a;
+}
+
+body.dark-theme .footer-content,
+body.dark-theme .footer-bottom {
+    border-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Хедер страниц */
+body.dark-theme .page-header {
+    background: #0a0f2a;
+}
+
+body.dark-theme .page-header-text h1 {
+    color: #f1f5f9;
+}
+
+/* Хлебные крошки */
+body.dark-theme .breadcrumbs {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-theme .breadcrumbs a {
+    color: #94a3b8;
+}
+
+body.dark-theme .breadcrumbs span {
+    color: #f1f5f9;
+}
+
+/* Поиск */
+body.dark-theme .search-results {
+    background: #0f172a;
+}
+
+body.dark-theme .search-hero {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-theme .search-hero h2 {
+    color: #f1f5f9;
+}
+
+body.dark-theme .search-hero-form input {
+    background: #0f172a;
+    border-color: #334155;
+    color: #f1f5f9;
+}
+
+body.dark-theme .search-hero-form input::placeholder {
+    color: #64748b;
+}
+
+body.dark-theme .result-item {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-theme .result-item:hover {
+    background: #1e293b;
+    border-color: #ef4444;
+}
+
+body.dark-theme .result-item-title {
+    color: #f1f5f9;
+}
+
+body.dark-theme .result-item-desc {
+    color: #94a3b8;
+}
+
+body.dark-theme .result-item-title mark,
+body.dark-theme .result-item-desc mark {
+    background: rgba(239, 68, 68, 0.2);
+}
+
+body.dark-theme .results-type-header {
+    color: #94a3b8;
+    border-color: #334155;
+}
+
+body.dark-theme .no-results {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-theme .no-results h3 {
+    color: #f1f5f9;
+}
+
+/* Страница материала */
+body.dark-theme .material-detail {
+    background: #0f172a;
+}
+
+body.dark-theme .material-description {
+    background: #1e293b;
+}
+
+body.dark-theme .material-description p {
+    color: #cbd5e1;
+}
+
+body.dark-theme .material-content {
+    background: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+body.dark-theme .download-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-theme .download-title {
+    color: #f1f5f9;
+}
+
+body.dark-theme .download-icon {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+body.dark-theme .sidebar-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-theme .sidebar-card h3 {
+    color: #f1f5f9;
+}
+
+body.dark-theme .sidebar-info li i {
+    background: #334155;
+}
+
+body.dark-theme .sidebar-info li strong {
+    color: #f1f5f9;
+}
+
+body.dark-theme .related-item {
+    background: #0f172a;
+}
+
+body.dark-theme .related-item-content span {
+    color: #f1f5f9;
+}
+
+body.dark-theme .related-item-icon {
+    background: #334155;
+}
+
+body.dark-theme .btn-back--outline {
+    border-color: #334155;
+    color: #94a3b8;
+}
+
+body.dark-theme .btn-back--outline:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+/* Страница преподавателя */
+body.dark-theme .teacher-main {
+    background: #0f172a;
+}
+
+body.dark-theme .teacher-info h2 {
+    color: #f1f5f9;
+}
+
+body.dark-theme .teacher-bio {
+    color: #cbd5e1;
+}
+
+body.dark-theme .teacher-details {
+    border-color: #334155;
+}
+
+body.dark-theme .detail-value {
+    color: #f1f5f9;
+}
+
+/* Страница материалов (категории) */
+body.dark-theme .categories-section {
+    background: #0f172a;
+}
+
+body.dark-theme .category-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-theme .category-card-name {
+    color: #f1f5f9;
+}
+
+body.dark-theme .category-card:hover {
+    border-color: #ef4444;
+    background: #1e293b;
+}
+
+body.dark-theme .materials-section {
+    background: #0f172a;
+}
+
+body.dark-theme .filters-section {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-theme .filter-btn {
+    background: #1e293b;
+    border-color: #334155;
+    color: #94a3b8;
+}
+
+body.dark-theme .filter-btn:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+    background: #1e293b;
+}
+
+body.dark-theme .filter-btn.active {
+    background: #ef4444;
+    color: #ffffff;
+    border-color: #ef4444;
+}
+
+body.dark-theme .filter-sort select {
+    background: #1e293b;
+    border-color: #334155;
+    color: #f1f5f9;
+}
+
+body.dark-theme .material-item {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-theme .material-item-title {
+    color: #f1f5f9;
+}
+
+body.dark-theme .material-item-desc {
+    color: #94a3b8;
+}
+
+body.dark-theme .material-item-icon {
+    background: #334155;
+}
+
+body.dark-theme .group-header {
+    border-color: #334155;
+}
+
+body.dark-theme .group-title {
+    color: #f1f5f9;
+}
+
+body.dark-theme .group-icon {
+    background: #ef4444;
+    color: #ffffff;
+}
+
+body.dark-theme .group-count {
+    background: #334155;
+    color: #94a3b8;
+}
+
+/* Прокрутка */
+body.dark-theme::-webkit-scrollbar {
+    width: 8px;
+}
+
+body.dark-theme::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+body.dark-theme::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 4px;
+}
+
+body.dark-theme::-webkit-scrollbar-thumb:hover {
+    background: #ef4444;
+}
+
+/* Выделение текста */
+body.dark-theme::selection {
+    background: rgba(239, 68, 68, 0.3);
+    color: #ffffff;
+}

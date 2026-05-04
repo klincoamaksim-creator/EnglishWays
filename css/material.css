@@ -1,0 +1,482 @@
+/* ========== ХЛЕБНЫЕ КРОШКИ ========== */
+.breadcrumbs {
+    background: #f8faff;
+    border-bottom: 1px solid #eef2ff;
+    padding: 14px 0;
+}
+
+.breadcrumbs .container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+}
+
+.breadcrumbs a {
+    color: #64748b;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumbs a:hover {
+    color: #ef4444;
+}
+
+.breadcrumbs i {
+    color: #cbd5e1;
+    font-size: 0.65rem;
+}
+
+.breadcrumbs span {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* ========== ОСНОВНОЙ КОНТЕНТ ========== */
+.material-detail {
+    padding: 40px 0 80px;
+    background: #ffffff;
+}
+
+.material-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+}
+
+/* ========== ЛЕВАЯ КОЛОНКА ========== */
+.material-main {
+    min-width: 0;
+}
+
+.material-header {
+    margin-bottom: 24px;
+}
+
+.material-header-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.material-category-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.82rem;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.material-category-badge:hover {
+    transform: scale(1.03);
+}
+
+.material-new-badge {
+    background: #ef4444;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.material-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+
+.material-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+.material-meta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.material-meta i {
+    font-size: 0.8rem;
+}
+
+/* Описание */
+.material-description {
+    background: #f8faff;
+    border-left: 4px solid #ef4444;
+    padding: 20px 24px;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 24px;
+}
+
+.material-description p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Содержание */
+.material-content {
+    margin-bottom: 32px;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #eef2ff;
+    border-radius: 16px;
+    color: #1e293b;
+    line-height: 1.8;
+}
+
+.material-content h2,
+.material-content h3 {
+    color: #0a0f2a;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.material-content p {
+    margin-bottom: 12px;
+}
+
+.material-content ul,
+.material-content ol {
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.material-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+.material-content table td,
+.material-content table th {
+    border: 1px solid #e2e8f0;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+.material-content table th {
+    background: #0a0f2a;
+    color: #ffffff;
+}
+
+/* ========== БЛОК СКАЧИВАНИЯ ========== */
+.download-block {
+    margin-bottom: 32px;
+}
+
+.download-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 28px;
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    transition: all 0.3s;
+}
+
+.download-card:hover {
+    border-color: #ef4444;
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.08);
+}
+
+.download-card--missing {
+    border-color: #fecaca;
+    background: #fef2f2;
+}
+
+.download-icon {
+    width: 56px;
+    height: 56px;
+    background: #fef2f2;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef4444;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.download-card--missing .download-icon {
+    background: #fecaca;
+    color: #dc2626;
+}
+
+.download-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.download-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1e293b;
+}
+
+.download-meta {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ef4444;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    flex-shrink: 0;
+}
+
+.btn-download:hover {
+    background: #0a0f2a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
+}
+
+/* ========== КНОПКИ НАЗАД ========== */
+.material-back {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    border-top: 2px solid #f1f5f9;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    background: #0a0f2a;
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn-back:hover {
+    background: #ef4444;
+}
+
+.btn-back--outline {
+    background: transparent;
+    color: #64748b;
+    border: 2px solid #e2e8f0;
+}
+
+.btn-back--outline:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+    background: transparent;
+}
+
+/* ========== САЙДБАР ========== */
+.material-sidebar {
+    position: sticky;
+    top: 90px;
+    align-self: start;
+}
+
+.sidebar-card {
+    background: #f8faff;
+    border: 1px solid #eef2ff;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 16px;
+}
+
+.sidebar-info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sidebar-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.sidebar-info li i {
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef4444;
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
+.sidebar-info li div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sidebar-info li span {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.sidebar-info li strong {
+    font-size: 0.9rem;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* Кнопка скачать в сайдбаре */
+.btn-download-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px;
+    background: #ef4444;
+    color: #ffffff;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.btn-download-sidebar:hover {
+    background: #0a0f2a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
+}
+
+/* Похожие */
+.related-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.related-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+
+.related-item:hover {
+    border-color: #ef4444;
+    transform: translateX(4px);
+}
+
+.related-item-icon {
+    width: 32px;
+    height: 32px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+.related-item-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.related-item-content span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1e293b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.related-new {
+    background: #ef4444;
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* ========== АДАПТИВ ========== */
+@media (max-width: 900px) {
+    .material-layout {
+        grid-template-columns: 1fr;
+    }
+    .material-sidebar {
+        position: static;
+    }
+}
+
+@media (max-width: 600px) {
+    .material-header h1 {
+        font-size: 1.5rem;
+    }
+    .download-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .material-back {
+        flex-direction: column;
+    }
+    .btn-back {
+        justify-content: center;
+    }
+}

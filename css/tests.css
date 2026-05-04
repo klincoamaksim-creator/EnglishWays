@@ -1,0 +1,334 @@
+/* ========== КАРТОЧКИ КАТЕГОРИЙ ========== */
+.tests-categories {
+    padding: 40px 0 20px;
+    background: #ffffff;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+}
+
+.test-category-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 20px;
+    background: #ffffff;
+    border: 2px solid #eef2ff;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.test-category-card:hover {
+    border-color: #ef4444;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(239, 68, 68, 0.08);
+}
+
+.test-category-icon {
+    width: 44px;
+    height: 44px;
+    background: #fef2f2;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef4444;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.test-category-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.test-category-name {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 0.9rem;
+}
+
+.test-category-count {
+    font-size: 0.78rem;
+    color: #94a3b8;
+}
+
+.test-category-arrow {
+    color: #cbd5e1;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+}
+
+.test-category-card:hover .test-category-arrow {
+    color: #ef4444;
+    transform: translateY(3px);
+}
+
+/* ========== СЕКЦИИ ТЕСТОВ ========== */
+.tests-content {
+    padding: 30px 0 80px;
+    background: #f8faff;
+}
+
+.test-section {
+    margin-bottom: 50px;
+}
+
+.test-section:last-child {
+    margin-bottom: 0;
+}
+
+.test-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #eef2ff;
+}
+
+.test-section-header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.test-section-icon {
+    width: 46px;
+    height: 46px;
+    background: #0a0f2a;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef4444;
+    font-size: 1.2rem;
+}
+
+.test-section-header-left h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #1e293b;
+}
+
+.test-section-count {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    background: #eef2ff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+/* ========== ЭЛЕМЕНТЫ ТЕСТОВ ========== */
+.test-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.test-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 24px;
+    background: #ffffff;
+    border: 1px solid #eef2ff;
+    border-radius: 16px;
+    transition: all 0.3s;
+}
+
+.test-item:hover {
+    border-color: #ef4444;
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.06);
+    transform: translateX(4px);
+}
+
+.test-item-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1;
+    min-width: 0;
+}
+
+.test-item-icon {
+    width: 42px;
+    height: 42px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.test-item-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.test-item-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.test-item-body h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.test-badge-new {
+    background: #ef4444;
+    color: #ffffff;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    animation: pulse 2s infinite;
+    flex-shrink: 0;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.test-item-body p {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.test-item-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+.test-item-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.test-item-meta i {
+    font-size: 0.75rem;
+}
+
+.test-item-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.btn-download-test {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: #ef4444;
+    color: #ffffff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+
+.btn-download-test:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(239, 68, 68, 0.3);
+}
+
+.btn-view-test {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: #0a0f2a;
+    color: #ffffff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+
+.btn-view-test:hover {
+    background: #1e293b;
+    transform: translateY(-2px);
+}
+
+/* ========== ПУСТО ========== */
+.empty-state {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    color: #cbd5e1;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.empty-state h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    color: #94a3b8;
+}
+
+/* ========== АДАПТИВ ========== */
+@media (max-width: 768px) {
+    .test-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+    .test-item-actions {
+        width: 100%;
+    }
+    .btn-download-test, .btn-view-test {
+        flex: 1;
+        justify-content: center;
+    }
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    .test-item-body h3 {
+        font-size: 0.95rem;
+    }
+    .test-item-meta {
+        gap: 10px;
+    }
+}
